@@ -1,0 +1,182 @@
+body {
+  background-image: url("https://as2.ftcdn.net/v2/jpg/03/77/09/91/1000_F_377099144_Bwrm1JNthinqmVtTJAthzKNN1bQBVLVW.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 767px) {
+  header {
+    background-color: #c5bdbd;
+  }
+
+  nav {
+    font-size: 16px;
+  }
+
+  .column {
+    flex: 100%;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .button-menu-toggle {
+    display: block;
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 0 24px;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .nav-links.nav-links-responsive {
+    position: absolute;
+    display: flex;
+    background-color: rgba(20, 20, 20, 0.95);
+    width: 100%;
+    height: 100%;
+    top: 70px;
+    left: 0;
+    flex-direction: column;
+    padding-top: 200px;
+    align-items: center;
+    gap: 70px;
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  header {
+    width: 1200px;
+  }
+}
+
+/* -----------------------------*/
+
+.container-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  padding: 10px;
+  height: 50px;
+  background-color: #272626;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-image: url("https://st4.depositphotos.com/20524830/26090/i/600/depositphotos_260900652-stock-photo-motion-blur-abstract-background-abstract.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  padding: 0px;
+  font-size: 18px;
+  color: #000000; /* Color azul gradiente */
+  background-image: linear-gradient(to right, #6e6e6e, #02163d); /* Gradiente azul */
+  font-family: "Arial", sans-serif; /* Establece una fuente */
+  font-weight: bold; /* Fuente en negrita */
+  transition: transform 0.3s ease; /* Transición al hacer hover */
+  text-shadow: 2px 2px 4px #ffffff; /* Sombra gradiente */
+}
+
+li > a {
+  padding: 0px;
+  margin: 20px;
+  font-size: 18px;
+  color: #000000; /* Color azul gradiente */
+  background-image: linear-gradient(to right, #4dc7ff, #0055ff); /* Gradiente azul */
+  font-family: "Arial", sans-serif; /* Establece una fuente */
+  font-weight: bold; /* Fuente en negrita */
+  transition: transform 0.3s ease; /* Transición al hacer hover */
+  text-shadow: 2px 2px 4px #ffffff; /* Sombra gradiente */
+}
+li > a:hover {
+  transform: scale(1.2); /* Efecto de escala al hacer hover */
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; /* Crea el borde negro alrededor del texto */
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.button-menu-toggle {
+  display: none;
+}
+.h1 {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  font-size: 18px;
+  color: #2b2a58; /* Color azul gradiente */
+  font-family: "Arial", sans-serif; /* Establece una fuente */
+  font-weight: bold; /* Fuente en negrita */
+  text-shadow: 2px 2px 4px #ffffff; /* Sombra gradiente */
+}
+.p {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  font-size: 18px;
+  color: #d4b9b9; /* Color azul gradiente */
+  text-shadow: 3px 3px 5px #2c1c1c; /* Sombra gradiente */
+}
+.image-container {
+  display: flex;
+}
+
+.image-box {
+  flex: 1;
+  margin: 10px;
+  overflow: hidden; /* Recorta el contenido que excede el tamaño del contenedor */
+}
+
+.image-box img {
+  width: 100%; /* Ocupa todo el ancho del contenedor */
+  height: 100%; /* Ocupa todo el alto del contenedor */
+  object-fit: cover; /* Recorta y ajusta la imagen para que se ajuste al contenedor */
+}
+.ccc{
+align-items: center;
+text-align: center;
+align-content: center;
+
+}
+#myButton {
+  border-radius: 20px; /* hace que los bordes del botón sean más redondeados */
+  padding: 10px 20px; /* espaciado alrededor del texto del botón */
+  margin-left: 20px; /* margen a la izquierda del botón */
+  background-image: url('https://cdn.discordapp.com/attachments/522070511237464064/1105666435545563136/beautiful_abstract_art-wallpaper-1920x1200.jpg'); /* imagen de fondo */
+  background-size: cover; /* escala la imagen de fondo para llenar el botón */
+  color: rgb(168, 158, 158);
+  text-decoration: none;
+  border: none; /* elimina el borde del botón */
+}
+
+#myButton:hover {
+  background-image: url('https://media.istockphoto.com/id/1251007701/photo/abstract-blurred-colorful-gradient-background-in-soft-style.jpg?s=612x612&w=0&k=20&c=J3MxBvMODVvQCYRw8BRkWXhsqsE9XbxxnmMyz42R5-E='); /* imagen de fondo diferente al pasar el cursor por encima */
+  cursor: pointer; /* cambia el cursor a una mano al pasar el cursor por encima */
+}
+.greeting {
+  text-align: center;
+}
