@@ -1,15 +1,14 @@
-// Obtén referencia al elemento de audio
-const audio = document.getElementById('myAudio');
+const myButton2 = document.getElementById('myButton2');
+const audio = new Audio('Piero_-_Yo_Vengo_Cancion_Oficial_MP3_160K.mp3');
+let isPlaying = false;
 
-// Función para reproducir o pausar la canción
-function toggleAudio() {
-  if (audio.paused) {
-    audio.play();
-  } else {
+myButton2.addEventListener('click', function(event) {
+  event.preventDefault(); // Evita que el botón envíe el formulario
+  if (isPlaying) {
     audio.pause();
+    isPlaying = false;
+  } else {
+    audio.play();
+    isPlaying = true;
   }
-}
-
-// Asigna la función toggleAudio al evento onClick del botón
-const button = document.querySelector('.myButton button');
-button.addEventListener('click', toggleAudio);
+});

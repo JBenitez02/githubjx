@@ -160,22 +160,28 @@ a {
 align-items: center;
 text-align: center;
 align-content: center;
-
 }
-.myButton {
+#myButton2 {
   border-radius: 20px; /* hace que los bordes del botón sean más redondeados */
   padding: 10px 20px; /* espaciado alrededor del texto del botón */
   margin-left: 20px; /* margen a la izquierda del botón */
   background-image: url('https://cdn.discordapp.com/attachments/522070511237464064/1105666435545563136/beautiful_abstract_art-wallpaper-1920x1200.jpg'); /* imagen de fondo */
   background-size: cover; /* escala la imagen de fondo para llenar el botón */
-  color: rgb(168, 158, 158);
+  color: white;
   text-decoration: none;
   border: none; /* elimina el borde del botón */
 }
 
-.myButton:hover {
+#myButton2:hover {
   background-image: url('https://media.istockphoto.com/id/1251007701/photo/abstract-blurred-colorful-gradient-background-in-soft-style.jpg?s=612x612&w=0&k=20&c=J3MxBvMODVvQCYRw8BRkWXhsqsE9XbxxnmMyz42R5-E='); /* imagen de fondo diferente al pasar el cursor por encima */
   cursor: pointer; /* cambia el cursor a una mano al pasar el cursor por encima */
+}
+label {
+  -webkit-text-stroke-width: 0,5px;
+  -webkit-text-stroke-color: rgb(175, 183, 255);
+  color: #000000;
+  font-weight: bold;
+  font-family: Arial;
 }
 .greeting {
   text-align: center;
