@@ -1,0 +1,108 @@
+/* Estilos para el encabezado */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 32px;
+    margin: 0;
+  }
+  
+  nav {
+    margin-top: 10px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  
+  /* Estilos para las secciones */
+  section {
+    color: #fff;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.5); /* Cambia el valor alpha (0.5) según tu preferencia */
+  }
+  
+  h2 {
+    font-size: 24px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  /* Estilos para la galería de medios */
+  .media-gallery {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .media-gallery img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    margin: 10px;
+  }
+  
+  /* Estilos para el pie de página */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  header {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .title-section {
+    flex: 1;
+    text-align: right;
+  }
+  
+  .image-section {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .artist-image {
+    width: 100px; /* Ajusta el tamaño de la imagen según tus necesidades */
+    height: 100px;
+    border-radius: 50%;
+  }
+  
+  .bio-section, .other-section {
+    margin-bottom: 20px;
+  }
+  body {
+    position: relative;
+  }
+  
+  body::before {
+    content: "";
+    background: url("https://trome.com/resizer/gdY-XPCFF8L4V59zgDxyzyN-fo8=/1200x900/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/C4DFDTVVZFHKFOXHSUZHAKNUGI.jpg") no-repeat center center fixed;
+    background-size: cover;
+    filter: blur(8px);
+    opacity: 0.7;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  

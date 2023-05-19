@@ -1,5 +1,5 @@
 const myButton2 = document.getElementById('myButton2');
-const audio = new Audio('Piero_-_Yo_Vengo_Cancion_Oficial_MP3_160K.mp3');
+const audio = new Audio('Piero');
 let isPlaying = false;
 
 myButton2.addEventListener('click', function(event) {

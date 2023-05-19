@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="clase8.css">
+  <title>Slider y Galería</title>
+</head>
+<body>
+  <div class="slider-container">
+    <div class="image-slider">
+      <img class="img" src="https://unaideaunviaje.com/wp-content/uploads/2015/05/calafate-perito-moreno-unaideaunviaje-9.jpg" alt="Image 1">
+      <img class="img" src="https://tipsparatuviaje.com/wp-content/uploads/2019/08/lugar-turistico.jpg" alt="Image 2">
+      <img class="img" src="https://www.lugaresturisticosdeargentina.com/wp-content/gallery/cataratasdeliguazu/Cataratas-del-Iguazu1.jpg" alt="Image 3">
+      <img class="img" src="https://diariodocomercio.com.br/wp-content/uploads/2019/06/Buenos-Aires.jpg" alt="Image 4">
+      <button class="prev-button button-slider">&lt;</button>
+      <button class="next-button button-slider">&gt;</button>
+    </div>
+  </div>
+
+  <div class="gallery-container">
+    <img src="https://unaideaunviaje.com/wp-content/uploads/2015/05/calafate-perito-moreno-unaideaunviaje-9.jpg" alt="Image 1">
+    <img src="https://tipsparatuviaje.com/wp-content/uploads/2019/08/lugar-turistico.jpg" alt="Image 2">
+    <img src="https://www.lugaresturisticosdeargentina.com/wp-content/gallery/cataratasdeliguazu/Cataratas-del-Iguazu1.jpg" alt="Image 3">
+    <img src="https://diariodocomercio.com.br/wp-content/uploads/2019/06/Buenos-Aires.jpg" alt="Image 4">
+  </div>
+
+  <button id="toggleButton">Ver vista galería de imágenes</button>
+  <div id="app">
+    <table>
+      <thead>
+        <tr>
+          <th onclick="sortTable('name')">Nombre del país</th>
+          <th onclick="sortTable('score')">Puntaje</th>
+        </tr>
+      </thead>
+      <tbody id="table-body">
+        <!-- Filas de países se agregarán dinámicamente aquí -->
+      </tbody>
+    </table>
+    <div class="controls">
+      <button onclick="addRow()">Agregar fila</button>
+      <button onclick="resetTable()">Reset</button>
+      <button onclick="saveTableState()">Guardar estado</button>
+      <select id="saved-states" onchange="loadSavedState()">
+        <option value="">Seleccione una versión guardada</option>
+      </select>
+      <button onclick="startStopRandomize()">Iniciar</button>
+    </div>
+  </div>
+  <script src="clase8.js"></script>
+</body>
+</html>
