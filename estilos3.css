@@ -162,7 +162,7 @@ text-align: center;
 align-content: center;
 
 }
-#myButton {
+.myButton {
   border-radius: 20px; /* hace que los bordes del botón sean más redondeados */
   padding: 10px 20px; /* espaciado alrededor del texto del botón */
   margin-left: 20px; /* margen a la izquierda del botón */
@@ -173,7 +173,7 @@ align-content: center;
   border: none; /* elimina el borde del botón */
 }
 
-#myButton:hover {
+.myButton:hover {
   background-image: url('https://media.istockphoto.com/id/1251007701/photo/abstract-blurred-colorful-gradient-background-in-soft-style.jpg?s=612x612&w=0&k=20&c=J3MxBvMODVvQCYRw8BRkWXhsqsE9XbxxnmMyz42R5-E='); /* imagen de fondo diferente al pasar el cursor por encima */
   cursor: pointer; /* cambia el cursor a una mano al pasar el cursor por encima */
 }
